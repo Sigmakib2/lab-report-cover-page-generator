@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    margin-left: 5px;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+}
+
+h3,
+h4 {
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Clear the float */
+}
+
+.column {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h5 {
+    font-family: 'Abel', sans-serif;
+    font-size: 28px;
+    color: #F07D80;
+}
+
+.h6 {
+    font-family: 'Abel', sans-serif;
+    font-size: 28px;
+    color: #5271FF;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

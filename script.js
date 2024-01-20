@@ -1,6 +1,6 @@
 function generatePDF() {
     var datacom = document.getElementById('data-com');
-    var filenameInput = document.getElementById('headingInput').value.trim();
+    var filenameInput = document.getElementById('headingReg').value.trim();
     var pdfOptions = {
         filename: filenameInput+"_DataCom" || 'datacom.pdf',
     };
@@ -8,7 +8,7 @@ function generatePDF() {
 }
 function generateOS() {
     var os = document.getElementById('os');
-    var filenameInput = document.getElementById('headingInput').value.trim();
+    var filenameInput = document.getElementById('headingReg').value.trim();
     var pdfOptions = {
         filename: filenameInput+"_OS" || 'datacom.pdf',
     };
@@ -16,7 +16,7 @@ function generateOS() {
 }
 function generatePe() {
     var per = document.getElementById('peripheral');
-    var filenameInput = document.getElementById('headingInput').value.trim();
+    var filenameInput = document.getElementById('headingReg').value.trim();
     var pdfOptions = {
         filename: filenameInput+"_Peripheral" || 'datacom.pdf',
     };

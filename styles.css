@@ -2,6 +2,12 @@ body {
     text-align: center;
     margin-left: 5px;
 }
+.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    pointer-events: none;
+}
 
 h1 {
     font-family: 'Satisfy', cursive;

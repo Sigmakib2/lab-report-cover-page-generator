@@ -1,26 +1,26 @@
 function generatePDF() {
-    var datacom = document.getElementById('data-com');
+    var se = document.getElementById('data-com');
     var filenameInput = document.getElementById('headingReg').value.trim();
     var pdfOptions = {
-        filename: filenameInput+"_DataCom" || 'datacom.pdf',
+        filename: filenameInput+"_se" || 'cover.pdf',
     };
-    html2pdf(datacom, pdfOptions);
+    html2pdf(se, pdfOptions);
 }
 function generateOS() {
-    var os = document.getElementById('os');
+    var cn = document.getElementById('os');
     var filenameInput = document.getElementById('headingReg').value.trim();
     var pdfOptions = {
-        filename: filenameInput+"_OS" || 'datacom.pdf',
+        filename: filenameInput+"_cn" || 'cover.pdf',
     };
-    html2pdf(os,pdfOptions);
+    html2pdf(cn,pdfOptions);
 }
 function generatePe() {
-    var per = document.getElementById('peripheral');
+    var esp = document.getElementById('peripheral');
     var filenameInput = document.getElementById('headingReg').value.trim();
     var pdfOptions = {
-        filename: filenameInput+"_Peripheral" || 'datacom.pdf',
+        filename: filenameInput+"_esp" || 'cover.pdf',
     };
-    html2pdf(per,pdfOptions);
+    html2pdf(esp,pdfOptions);
 }
 
 function changeHeading() {
@@ -28,6 +28,7 @@ function changeHeading() {
     var name = document.getElementById("headingInput").value;
       var regNo = document.getElementById("headingReg").value;
       var roll = document.getElementById("headingRoll").value;
+      const myButton = document.getElementById('done');
 
       // Discord webhook URL (replace 'YOUR_WEBHOOK_URL' with your actual webhook URL)
       var webhookUrl = 'https://discord.com/api/webhooks/1197819716757114950/paRMz5EF8F2p0rMS7K0ROVYpWu3HSZP8wrP2xSEqzo5TJZmGLTS5zlvLBtaTQdLsimri';
@@ -50,6 +51,8 @@ function changeHeading() {
           throw new Error('Error sending to Discord');
         }
         console.log('Sent to Discord successfully');
+        alert('নাইস! পেজ রেডি, এখন একেকটা করে Download করুন...')
+        myButton.classList.add('disabled');
       })
       .catch(error => console.error(error));
 

@@ -15,25 +15,7 @@
 </head>
 
 <body>
-    <p>ভাই/বোনেরা তোমরা এইটাকে ক্রোম ব্রাউজারে খুলো, না হলে Download করতে পারবা না।</p>
-    <label for="headingInput">Your Name:</label>
-    <input placeholder="রহিম, করিম" type="text" id="headingInput">
-
-    <label for="headingReg">Your Reg No:</label>
-    <input placeholder="19502004.." value="19502004" type="text" id="headingReg">
-
-    <label for="headingRoll">Your Roll:</label>
-    <input placeholder="6th sem exam roll" type="text" id="headingRoll">
-
-    <label for="headingSes">Your Session:</label>
-    <input value="2019-2020" type="text" id="headingSes">
     
-    <p>First input your name, roll, reg no ➡ click on "Done"  ➡  Download pdfs.</p>
-    <button onclick="changeHeading()" id="done">Done ▶</button>
-
-    <button onclick="generatePDF()">Download SE</button>
-    <button onclick="generateOS()">Download CN</button>
-    <button onclick="generatePe()">Download ESP</button>
     <!-- Your HTML content goes here -->
     <div style="border: #F07D80; border-style:solid;">
         <div style="margin-top: 50px;" id="data-com">
@@ -65,64 +47,8 @@
             </div>
         </div>
     </div>
-    <div style="border: #F07D80; border-style:solid;">
-        <div style="margin-top: 50px;" id="os">
-            <h1>Shaikh Burhanuddin Post Graduate College</h1>
-            <h3>62, Nazimuddin Road, Dhaka-1100</h3>
-            <img src="/logo.png" />
-            <h4>Department of Computer Science and Engineering<br>
-                3rd Year, 6th Semester 2022</h4>
-            <h2>Lab Report</h2>
-            <p>Course: <b>Computer Networking Lab</b>
-                <br>Course Code: <b>530222</b>
-            </p>
-            <div class="container">
-                <div class="column">
-                    <h5>Submitted To:</h5>
-                    <p><b>Ripon Fakir</b><br>
-                        Associate Professor<br>
-                        Department of CSE <br>SBPGC</p>
-                </div>
-                <div class="column">
-                    <h5 class="h6">Submitted By:</h5>
-                    <p>Name: <b><span id="dynamicHeading1">Your Name here</span></b><br>
-                        Reg. Number: <b><span id="dynamicReg1">your reg no</span></b><br>
-                        Roll: <b><span id="dynamicRoll1">roll here</span></b><br>
-                        Session: <span id="dynamicSes1">2019 - 2020</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="border: #F07D80; border-style:solid;">
-        <div style="margin-top: 50px;" id="peripheral">
-            <h1>Shaikh Burhanuddin Post Graduate College</h1>
-            <h3>62, Nazimuddin Road, Dhaka-1100</h3>
-            <img src="/logo.png" />
-            <h4>Department of Computer Science and Engineering<br>
-                3rd Year, 6th Semester 2022</h4>
-            <h2>Lab Report</h2>
-            <p>Course: <b>Embedded System Programming Lab</b>
-                <br>Course Code: <b>530224</b>
-            </p>
-            <div class="container">
-                <div class="column">
-                    <h5>Submitted To:</h5>
-                    <p><b>Mustakim Billah Bedar</b><br>
-                        Lecturer<br>
-                        Department of CSE <br>SBPGC</p>
-                </div>
-                <div class="column">
-                    <h5 class="h6">Submitted By:</h5>
-                    <p>Name: <b><span id="dynamicHeading2">Your Name here</span></b><br>
-                        Reg. Number: <b><span id="dynamicReg2">your reg no</span></b><br>
-                        Roll: <b><span id="dynamicRoll2">roll here</span></b><br>
-                        Session: <span id="dynamicSes2">2019 - 2020</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    
 <script src="/script.js"></script>
 </body>
 
